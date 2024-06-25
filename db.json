@@ -1,0 +1,167 @@
+{
+  "roles": [
+    {
+      "id": "38d4",
+      "roleName": "admin",
+      "description": "admin has all permission"
+    },
+    {
+      "id": "2a9a",
+      "roleName": "user",
+      "description": "only read and create"
+    },
+    {
+      "id": "e872",
+      "roleName": "guest",
+      "description": "only read "
+    }
+  ],
+  "user": [
+    {
+      "id": "0.3853369195501237",
+      "firstName": "dipal",
+      "lastName": "shah",
+      "phone": "(122) 212 - 1212",
+      "email": "dips@gmail.com",
+      "role": "admin"
+    },
+    {
+      "id": "3422",
+      "firstName": "vivek",
+      "lastName": "khatik",
+      "phone": "(000) 565 - 6565",
+      "email": "viv@gmail.com",
+      "role": "guest"
+    },
+    {
+      "id": "ac41",
+      "firstName": "tupi",
+      "lastName": "thakkar",
+      "phone": "(123) 456-7890",
+      "email": "t@g.co",
+      "role": "admin"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "name": "Tech Conference 2024",
+      "description": "A conference focused on emerging technologies and their impact on society.",
+      "startDate": "2024-07-15",
+      "endDate": "2024-07-17",
+      "location": "Convention Center, Ahmedabad"
+    },
+    {
+      "id": "2",
+      "name": "Art Exhibition: Exploring Colors",
+      "description": "An exhibition showcasing artworks that explore the use of colors in different contexts.",
+      "startDate": "2024-08-10",
+      "endDate": "2024-08-25",
+      "location": "Art Gallery, Hyderabad"
+    },
+    {
+      "id": "3",
+      "name": "Music Festival 2024",
+      "description": "A festival celebrating various genres of music with live performances.",
+      "startDate": "2024-09-05",
+      "endDate": "2024-09-07",
+      "location": "Outdoor Venue, Pune"
+    },
+    {
+      "id": "4",
+      "name": "Food Expo",
+      "description": "An expo showcasing the latest trends in food and culinary arts.",
+      "startDate": "2024-10-15",
+      "endDate": "2024-10-18",
+      "location": "Exhibition Center, Mumbai"
+    },
+    {
+      "id": "5",
+      "name": "Fashion Show: Fall Collection",
+      "description": "A fashion show presenting the latest fall collection from renowned designers.",
+      "startDate": "2024-11-05",
+      "endDate": "2024-11-07",
+      "location": "Fashion Mall, Delhi"
+    },
+    {
+      "id": "6",
+      "name": "Film Festival",
+      "description": "A festival showcasing a selection of critically acclaimed films from around the world.",
+      "startDate": "2024-12-01",
+      "endDate": "2024-12-10",
+      "location": "Cinema Complex, Chennai"
+    },
+    {
+      "id": "7",
+      "name": "Startup Summit",
+      "description": "A summit bringing together entrepreneurs and investors to discuss startup opportunities.",
+      "startDate": "2025-01-15",
+      "endDate": "2025-01-17",
+      "location": "Startup Hub, Bengaluru"
+    },
+    {
+      "id": "8",
+      "name": "Health & Wellness Expo",
+      "description": "An expo focusing on promoting health and wellness through various products and services.",
+      "startDate": "2025-02-10",
+      "endDate": "2025-02-12",
+      "location": "Wellness Center, Ahmedabad"
+    },
+    {
+      "id": "9",
+      "name": "Science Fair",
+      "description": "A fair showcasing innovative projects and experiments from students and researchers.",
+      "startDate": "2025-03-20",
+      "endDate": "2025-03-22",
+      "location": "Science Museum, Bhopal"
+    },
+    {
+      "id": "10",
+      "name": "Literature Festival",
+      "description": "A festival celebrating literature with book launches, author talks, and poetry readings.",
+      "startDate": "2025-04-05",
+      "endDate": "2025-04-07",
+      "location": "Library Auditorium, Trivendrum"
+    },
+    {
+      "id": "11",
+      "name": "Sports Expo",
+      "description": "An expo featuring the latest sports equipment, apparel, and fitness technologies.",
+      "startDate": "2025-05-15",
+      "endDate": "2025-05-17",
+      "location": "Sports Arena, Jaipur"
+    },
+    {
+      "id": "12",
+      "name": "Environmental Summit",
+      "description": "A summit focused on discussing environmental issues and sustainable solutions.",
+      "startDate": "2025-06-10",
+      "endDate": "2025-06-12",
+      "location": "Environmental Center, Pune"
+    },
+    {
+      "id": "13",
+      "name": "Cultural Festival",
+      "description": "A festival celebrating the diverse cultural heritage through music, dance, and cuisine.",
+      "startDate": "2025-07-20",
+      "endDate": "2025-07-22",
+      "location": "Cultural Center, Ahmedabad"
+    },
+    {
+      "id": "14",
+      "name": "Education Expo",
+      "description": "An expo showcasing educational institutions and learning resources.",
+      "startDate": "2025-08-15",
+      "endDate": "2025-08-18",
+      "location": "Education Center, Delhi"
+    },
+    {
+      "id": "15",
+      "name": "Technology Summit",
+      "description": "A summit exploring the latest advancements in technology and their applications.",
+      "startDate": "2025-09-05",
+      "endDate": "2025-09-07",
+      "location": "Tech Park, Mumbai"
+    }
+  ]
+}

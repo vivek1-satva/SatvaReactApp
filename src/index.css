@@ -1,0 +1,317 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#tableBody {
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding: 5%;
+}
+
+#satvaLogo {
+  height: 50px
+}
+
+#nav {
+  background-color: #c3d7dd;
+}
+
+#sideBar {
+  position: fixed;
+  width: 21%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+em {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar-li {
+  text-align: center;
+  height: 100%;
+}
+
+.s-sidebar__nav {
+  left: -15em;
+  width: 13em;
+  height: 89vh;
+  background: #113250;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#sidebarHeader,
+#sideBarBody {
+  background: #113250;
+}
+
+#sidebarHeader>button {
+  background-color: aliceblue;
+}
+
+.s-sidebar__nav:hover,
+.s-sidebar__nav:focus,
+.s-sidebar__trigger:focus+.s-sidebar__nav,
+.s-sidebar__trigger:hover+.s-sidebar__nav {
+  left: 0;
+}
+
+.s-sidebar__nav-link {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0px 20px 0px
+}
+
+.s-sidebar__nav-link:hover {
+  background: #4d6276;
+}
+
+.s-sidebar__nav>ul {
+  list-style: none;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 15px
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  margin: 15px 15px 0px 15px;
+}
+
+#gradBackground { 
+  /* margin-left: 10%; */
+  height: 102vh;
+  width: 100%;
+  background-color: #75b9e6
+  /* background-image: linear-gradient(to right, #5781ff, #38ff5a); */
+}
+
+#contactUs-form-card {
+  background-color: white;
+  height: 60vh;
+  width: 60%;
+  position: absolute;
+  left: 60%;
+  top: 55%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: 8px 8px 5px #596367;
+  padding: 15px;
+}
+
+#contactUsImage {
+  margin-top: 30px;
+  height: 260px;
+}
+
+#contactUsLogo {
+  height: 50px;
+  display: none;
+}
+
+.navbarButtons {
+  margin: 9px
+}
+
+#basic-nav-dropdown{
+  display : none
+}
+
+.links-decor {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 2560px){
+  .dropdown-menu.show {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .main {
+    margin-left: 11% !important;
+    margin-top: 8% !important;
+  }
+  .dropdown-menu.show {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .main {
+    margin-left: 13% !important;
+    margin-top: 9% !important;
+  }
+
+  .dropdown-menu.show {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    margin: 35px 15px 0px 15px;
+  }
+
+  #sidebarMenuBtn{
+    display : none
+  }
+
+  #basic-nav-dropdown,.dropdown-menu.show{
+    display : block
+  }
+
+  .main {
+    left: 0 !important;
+    margin-left: 1% !important;
+  }
+
+  .s-sidebar__nav {
+    width: 100%
+  }
+
+  #sideBar {
+    width: 30%;
+    position: absolute;
+  }
+
+  .main {
+    margin-top: 12% !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    margin: 35px 15px 0px 15px;
+  }
+
+  #sideBar {
+    width: 30%
+  }
+
+  .main {
+    margin-top: 15% !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #contactUsImage {
+    display: none;
+  }
+
+  #contactUsLogo {
+    margin-top: 15px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #sideBar {
+    width: 35%
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #sideBar {
+    width: 45%
+  }
+
+  .s-sidebar__nav>ul {
+    padding-left: 1em;
+  }
+
+  .main {
+    margin-top: 17% !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #sideBar {
+    width: 55%
+  }
+
+  .s-sidebar__nav>ul {
+    padding-left: 1em;
+  }
+
+  .main {
+    margin-top: 22% !important;
+  }
+}
+
+.top {
+  /* position: absolute; */
+  /* left: 0;
+  right: 0; */
+  /* height: 92px; */
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: 75px;
+  bottom: 0;
+  /* width: 100%; */
+  height: 100%;
+  overflow: auto;
+}
+
+.main {
+  position: inherit;
+  margin-left: 10%;
+  margin-top: 5%;
+  left: 120px;
+  top: 46px;
+  right: 0;
+  bottom: 0;
+}
+
+#loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+}

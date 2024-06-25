@@ -1,0 +1,56 @@
+#form-card{
+    background-color: white;
+    height:40vh;
+    width: 60%;
+    position: absolute;
+    left: 25%;
+    top: 28%;
+    border-radius: 5px;
+    box-shadow: 8px 8px 5px #596367;
+    padding: 15px;
+    border-style: outset;
+}
+#eventCardArea{
+    padding-left: 16%;
+    max-width: 100%;
+}
+#event-Card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding:15px;
+    max-width: 45%;
+    background-color: #d7ecfa;
+}
+
+#eventHeading{
+    margin-left:15%
+}
+
+.stopwatch-time {
+    text-align: center;
+    color: red;
+    font-size: 80px;
+    margin-top : 15%
+}
+
+.stopwatch-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.stopwatch-buttons button {
+    margin: 20px;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.stopwatch-buttons button:first-child {
+    background-color: green;
+}
+
+.stopwatch-buttons button:last-child {
+    background-color: red;
+}
+
