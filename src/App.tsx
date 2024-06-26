@@ -26,7 +26,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/SatvaReactApp',
-      element: <Login />,
+      element: <Day4 />,
       children: [
         {
           path: '/',
