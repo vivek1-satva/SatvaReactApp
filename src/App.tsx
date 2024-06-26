@@ -25,7 +25,7 @@ import Login from './components/Day4_7_8/Login';
 function App() {
   const router = createBrowserRouter([
     {
-      path: 'SatvaReactApp',
+      path: '/SatvaReactApp',
       element: <Login />,
       children: [
         {
