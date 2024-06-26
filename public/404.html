@@ -26,11 +26,15 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <title>React App</title>
     <script type="text/javascript">
-      // Redirect to the index.html while preserving the path
-      var path = window.location.pathname;
-      var newUrl = window.location.protocol + "//" + window.location.host + "/SatvaReactApp/index.html?path=" + path;
-      window.location.replace(newUrl);
-  </script>
+        // Redirect to index.html
+        var redirectTo = '/';
+        var splitPath = window.location.pathname.split('/');
+        var path = splitPath.slice(1).join('/');
+        if (path) {
+            redirectTo += '?' + path;
+        }
+        window.location.href = redirectTo;
+    </script>
 </head>
 
 <body>
