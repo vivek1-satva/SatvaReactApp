@@ -41,6 +41,14 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 </body>
+<script>
+  // Check if there's a query parameter and navigate to that route
+  var searchParams = new URLSearchParams(window.location.search);
+  if (searchParams.has('path')) {
+      var path = searchParams.get('path');
+      window.history.replaceState({}, '', '/' + path);
+  }
+</script>
 <script src="https://kit.fontawesome.com/93d14489bb.js" crossorigin="anonymous"></script>
 <!-- sweetalert2 -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
