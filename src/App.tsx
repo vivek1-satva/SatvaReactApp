@@ -29,11 +29,6 @@ function App() {
       index: true
     },
     {
-      path: '/SatvaReactApp',
-      element: <Day4 />,
-      index: true
-    },
-    {
       path: "/table",
       element: <Day2 />
     },
@@ -152,7 +147,7 @@ function App() {
       element: <FileNotFound />,
     },
 
-  ]);
+  ],{ basename: '/SatvaReactApp' });
 
   return (
     <RouterProvider router={router} />
