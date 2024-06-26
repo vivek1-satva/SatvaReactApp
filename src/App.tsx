@@ -29,6 +29,11 @@ function App() {
       index: true
     },
     {
+      path: '/SatvaReactApp',
+      element: <Day4 />,
+      index: true
+    },
+    {
       path: "/table",
       element: <Day2 />
     },
