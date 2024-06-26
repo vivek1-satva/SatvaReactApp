@@ -46,7 +46,7 @@
   var searchParams = new URLSearchParams(window.location.search);
   if (searchParams.has('path')) {
       var path = searchParams.get('path');
-      window.history.replaceState({}, '', '/' + path);
+      window.history.replaceState({}, '', path);
   }
 </script>
 <script src="https://kit.fontawesome.com/93d14489bb.js" crossorigin="anonymous"></script>
