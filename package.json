@@ -1,7 +1,7 @@
 {
   "name": "basic_layout",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://vivek1-satva.github.io/SatvaReactApp",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
