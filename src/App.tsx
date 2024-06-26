@@ -146,12 +146,12 @@ function App() {
               ]
             },
           ]
-        },
-        {
-          path: '*',
-          element: <FileNotFound />,
         }
       ]
+    },
+    {
+      path: '*',
+      element: <FileNotFound />,
     }
   ]);
 
