@@ -20,133 +20,139 @@ import Listing from './components/Day9/Listing';
 import AddToCart from './components/Day9/AddToCart';
 import Index from './components/Day10/Index';
 import AuthLayout from './components/Day11/AuthLayout';
+import Login from './components/Day4_7_8/Login';
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/',
-      element: <Day4 />,
-      index: true
-    },
-    {
-      path: "/table",
-      element: <Day2 />
-    },
-    {
-      path: "/day4_7_8/signUp",
-      element: <SignUp />,
-    },
-    {
-      element: <AuthLayout />,
+      path: 'SatvaReactApp',
+      element: <Login />,
       children: [
         {
-          path: "/day1",
-          element: <CommonLayout task={1} />,
+          path: '/',
+          element: <Day4 />,
+          index: true
+        },
+        {
+          path: "/table",
+          element: <Day2 />
+        },
+        {
+          path: "/day4_7_8/signUp",
+          element: <SignUp />,
+        },
+        {
+          element: <AuthLayout />,
           children: [
             {
-              index: true,
-              element: <Day1 />,
-            }
+              path: "/day1",
+              element: <CommonLayout task={1} />,
+              children: [
+                {
+                  index: true,
+                  element: <Day1 />,
+                }
+              ]
+            },
+            {
+              path: "/day2",
+              element: <CommonLayout task={1} />,
+              children: [
+                {
+                  index: true,
+                  element: <Day1 />,
+                },
+                {
+                  path: "contactUs",
+                  element: <ContactUs />,
+                },
+                {
+                  path: "aboutUs",
+                  element: <AboutUs />,
+                },
+              ],
+            },
+            {
+              path: "/day3",
+              element: <CommonLayout task={1} />,
+              children: [
+                {
+                  index: true,
+                  element: <Day3 />,
+                }
+              ],
+            },
+            {
+              path: "/day4_7_8",
+              children: [
+                {
+                  index: true,
+                  element: <Day4 />,
+                },
+                {
+                  path: "user",
+                  element: <UserScreen />,
+                },
+                {
+                  path: "userAntD",
+                  element: <UserAntD />,
+                },
+                {
+                  path: "role",
+                  element: <RoleScreen />,
+                }
+              ],
+            },
+            {
+              path: "/day5_6",
+              element: <CommonLayout task={1} />,
+              children: [
+                {
+                  index: true,
+                  element: <Day5 />
+                },
+                {
+                  path: "stopWatch",
+                  element: <StopWatch />
+                }
+              ],
+            },
+            {
+              path: "/day9",
+              element: <CommonLayout task={9} />,
+              children: [
+                {
+                  index: true,
+                  element: <Day9 />
+                },
+                {
+                  path: 'productListing',
+                  element: <Listing />
+                },
+                {
+                  path: 'addToCart',
+                  element: <AddToCart />
+                }
+              ],
+            },
+            {
+              path: '/day10',
+              element: <CommonLayout task={1} />,
+              children: [
+                {
+                  index: true,
+                  element: <Index />
+                }
+              ]
+            },
           ]
         },
         {
-          path: "/day2",
-          element: <CommonLayout task={1} />,
-          children: [
-            {
-              index: true,
-              element: <Day1 />,
-            },
-            {
-              path: "contactUs",
-              element: <ContactUs />,
-            },
-            {
-              path: "aboutUs",
-              element: <AboutUs />,
-            },
-          ],
-        },
-        {
-          path: "/day3",
-          element: <CommonLayout task={1} />,
-          children: [
-            {
-              index: true,
-              element: <Day3 />,
-            }
-          ],
-        },
-        {
-          path: "/day4_7_8",
-          children: [
-            {
-              index: true,
-              element: <Day4 />,
-            },
-            {
-              path: "user",
-              element: <UserScreen />,
-            },
-            {
-              path: "userAntD",
-              element: <UserAntD />,
-            },
-            {
-              path: "role",
-              element: <RoleScreen />,
-            }
-          ],
-        },
-        {
-          path: "/day5_6",
-          element: <CommonLayout task={1} />,
-          children: [
-            {
-              index: true,
-              element: <Day5 />
-            },
-            {
-              path: "stopWatch",
-              element: <StopWatch />
-            }
-          ],
-        },
-        {
-          path: "/day9",
-          element: <CommonLayout task={9} />,
-          children: [
-            {
-              index: true,
-              element: <Day9 />
-            },
-            {
-              path: 'productListing',
-              element: <Listing />
-            },
-            {
-              path: 'addToCart',
-              element: <AddToCart />
-            }
-          ],
-        },
-        {
-          path: '/day10',
-          element: <CommonLayout task={1} />,
-          children: [
-            {
-              index: true,
-              element: <Index />
-            }
-          ]
-        },
+          path: '*',
+          element: <FileNotFound />,
+        }
       ]
-    },
-    {
-      path: '*',
-      element: <FileNotFound />,
-    },
-
+    }
   ]);
 
   return (
