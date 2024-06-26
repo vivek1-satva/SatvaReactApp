@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/SatvaReactApp/static/css/main.cb5d04f1.css",
-    "main.js": "/SatvaReactApp/static/js/main.b5fcd510.js",
+    "main.js": "/SatvaReactApp/static/js/main.277a2795.js",
     "index.html": "/SatvaReactApp/index.html",
     "main.cb5d04f1.css.map": "/SatvaReactApp/static/css/main.cb5d04f1.css.map",
-    "main.b5fcd510.js.map": "/SatvaReactApp/static/js/main.b5fcd510.js.map"
+    "main.277a2795.js.map": "/SatvaReactApp/static/js/main.277a2795.js.map"
   },
   "entrypoints": [
     "static/css/main.cb5d04f1.css",
-    "static/js/main.b5fcd510.js"
+    "static/js/main.277a2795.js"
   ]
 }
